@@ -27,6 +27,7 @@ public class player_controller : MonoBehaviour
     private Vector3 large;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private AudioSource AudioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,7 @@ public class player_controller : MonoBehaviour
         small = new Vector3(1f, 1f, 1f);
         medium = new Vector3(2f, 2f, 2f);
         large = new Vector3(3f, 3f, 3f);
+        AudioSource = GetComponent<AudioSource>();
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         rb.simulated = false;
@@ -69,6 +71,7 @@ public class player_controller : MonoBehaviour
         sprite.color = large_color;
         face.sprite = large_sprite;
         rb.mass = large_mass;
+        AudioSource.Play();
     }
 
     public void setTiny()
@@ -77,6 +80,7 @@ public class player_controller : MonoBehaviour
         sprite.color = tiny_color;
         face.sprite = tiny_sprite;
         rb.mass = tiny_mass;
+        AudioSource.Play();
     }
     public void setSmall()
     {
@@ -84,6 +88,7 @@ public class player_controller : MonoBehaviour
         sprite.color = small_color;
         face.sprite = small_sprite;
         rb.mass = small_mass;
+        AudioSource.Play();
     }
     public void SetMedium()
     {
@@ -91,6 +96,7 @@ public class player_controller : MonoBehaviour
         sprite.color = medium_color;
         face.sprite = medium_sprite;
         rb.mass = medium_mass;
+        AudioSource.Play();
     }
 
     

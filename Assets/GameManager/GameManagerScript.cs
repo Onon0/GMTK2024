@@ -17,8 +17,7 @@ public class GameManagerScript : MonoBehaviour
     public Button resetBtn;
     public Button exitBtn;
 
-    private Vector3 startPos;
-    private Vector3 startScale;
+    
 
     private Button nextButton;
     private Button quitButton;
@@ -33,8 +32,7 @@ public class GameManagerScript : MonoBehaviour
     private void Start()
     {
         
-        startPos = player.transform.position;
-        startScale = player.transform.localScale;
+        
 
         foreach (Button b in GameDialog.GetComponentsInChildren<Button>(true))
         {
