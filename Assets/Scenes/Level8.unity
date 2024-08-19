@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a255e43218d09c42b3b42ca42556191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 6
+  currentLevel: 8
   GameDialog: {fileID: 1837791442}
   player: {fileID: 898756989}
   resetBtn: {fileID: 616043417}

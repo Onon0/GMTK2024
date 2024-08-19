@@ -96,7 +96,7 @@ public class GameManagerScript : MonoBehaviour
         setButtonFinish();
         player.GetComponent<player_controller>().Finish();
         showDialog();
-        PlayerPrefs.SetInt("LastLevel", currentLevel);
+        PlayerPrefs.SetInt("LastLevel", currentLevel + 1);
         PlayerPrefs.Save();
     }
     public void NextScene()
